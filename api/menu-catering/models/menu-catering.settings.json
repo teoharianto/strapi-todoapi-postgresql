@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "menu_catering"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "catering_menu_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "catering_menu_description": {
+      "type": "richtext",
+      "required": true
+    },
+    "catering_menu_price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "catering_menu_image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "menu_caterings"
+}

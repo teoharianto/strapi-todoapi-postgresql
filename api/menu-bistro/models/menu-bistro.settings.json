@@ -1,0 +1,33 @@
+{
+  "info": {
+    "name": "menu_bistro"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "menu_name": {
+      "type": "string",
+      "private": false,
+      "required": true,
+      "unique": true
+    },
+    "menu_description": {
+      "type": "richtext",
+      "required": true
+    },
+    "menu_price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "menu_image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "menu_bistros"
+}

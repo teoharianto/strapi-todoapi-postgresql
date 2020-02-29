@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/menu-bistros",
+      "handler": "menu-bistro.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/menu-bistros/count",
+      "handler": "menu-bistro.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/menu-bistros/:id",
+      "handler": "menu-bistro.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/menu-bistros",
+      "handler": "menu-bistro.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/menu-bistros/:id",
+      "handler": "menu-bistro.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/menu-bistros/:id",
+      "handler": "menu-bistro.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
